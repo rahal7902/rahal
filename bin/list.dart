@@ -48,5 +48,27 @@ print(list4.join("/"));
   else{
     print('not present');
   }
+
+  list4.add(5);
+  list4.add(6);
+  list4.add(7);
+  list4.add(8);
+  print(list4);
+var list5=List.unmodifiable(list4); //here after we cannot modify the list
+  // print(list5);
+  // list5.add(67);
+  // print(list5);
+  var list6=List.from(list5,growable: true);
+  list6.add(98);
+  print(list6);
+  for(int v in list6){ //to
+    print(v);
+  }
+  var set1=list6.toSet();
+  print(set1);
+  List<String> list7=['df','tr','yy'];
+  list7.add('jk');
+  print(list7);
 }
+
 
